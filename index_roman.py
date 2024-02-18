@@ -77,7 +77,7 @@ def index_roman(file):
         # passage en minuscule
         ligne = ligne.lower()
         # on récupère une liste de mots, en enlevant tous les séparateurs connus
-        liste_mots = re.split('[;_,.?!\"\'\-\%\n() `&«»]', ligne)
+        liste_mots = re.split(r'[;_,.?!\"\'\-\%\n() `&«»]', ligne)
         # on enlève les mots vides dans la liste de mots
         while '' in liste_mots:
             liste_mots.remove('')
